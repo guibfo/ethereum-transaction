@@ -24,7 +24,7 @@
         </div>
         <div class="input-wrapper">
           <label class="label" for="amount">Amount (eth)</label>
-          <input class="input" id="amount" name="amount" type="number" placeholder="0" />
+          <input class="input" id="amount" name="amount" type="text" placeholder="0" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
           <span class="usd-value">USD <span class="value">0</span></span>
         </div>
         <div class="input-wrapper">
